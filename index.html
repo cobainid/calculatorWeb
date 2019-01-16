@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Calculator Web
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body oncontextmenu="return false;"  onkeydown="return false;" onmousedown="return false;">
+    <div id="window">
+        <div id="output">
+            <div class="hasil" id="display">0</div>
+            <div class="hasil" id="ret">0</div>
+        </div>
+        <button class="button" id="clear" onclick="hapus()">C</button>
+        <button class="button" id="pos-neg" onclick="del()">D</button>
+        <button class="button" id="percen">+/-</button>
+        <button class="button operator" id="divine" onclick="adding('/')">/</button>
+        <button class="button" id="num_7" onclick="adding('7')">7</button>
+        <button class="button" id="num_8" onclick="adding('8')">8</button>
+        <button class="button" id="num_9" onclick="adding('9')">9</button>
+        <button class="button operator" id="plus" onclick="adding('+')">+</button>
+        <button class="button" id="num_4" onclick="adding('4')">4</button>
+        <button class="button" id="num_5" onclick="adding('5')">5</button>
+        <button class="button" id="num_6" onclick="adding('6')">6</button>
+        <button class="button operator" id="minus" onclick="adding('-')">-</button>
+        <button class="button" id="num_1" onclick="adding('1')">1</button>
+        <button class="button" id="num_2" onclick="adding('2')">2</button>
+        <button class="button" id="num_3" onclick="adding('3')">3</button>
+        <button class="button operator" id="multi" onclick="adding('*')">*</button>
+        <button class="button" id="point" onclick="adding('.')">.</button>
+        <button class="button" id="num_0" onclick="adding('0')">0</button>
+        <button class="button" id="sama-dengan" onclick="equals()">=</button>
+    </div>
+
+    <div class="fot">&copy;2019 Defri Indra</div>
+    <script type="text/javascript" src="file.js"></script>
+    <script type="text/javascript">
+        $(document).keydown(function(e){
+        if(e.which === 123){
+     
+           return false;
+     
+        }
+     
+    });
+    </script>
+</body>
+
+</html>
