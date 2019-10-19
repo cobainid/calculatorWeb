@@ -1,3 +1,6 @@
 # calculatorWeb
 
-simple calculator usiing html, css , and javascript
+simple calculator application ,made using 
+ * html
+ * css
+ * javascript
