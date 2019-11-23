@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-        Calculator Web
-    </title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-
-<body oncontextmenu="return false;"  onkeydown="return false;" onmousedown="return false;">
-    <div id="window">
-        <div id="output">
-            <div class="hasil" id="display">0</div>
-            <div class="hasil" id="ret">0</div>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="modal">
+            <div class="box">
+                <div class="box-header">
+                    Simple Calculator Web
+                    <span class="btn-modal-cancel" id="modal-cancel">x</span>
+                </div>
+                <div class="box-body">
+                    Build by <a href="http://github.com/defrindr">Defri Indra Mahardika</a>
+                    <br>
+                    Contribution are welcome. 
+                </div>
+            </div>
         </div>
-        <button class="button" id="clear" onclick="hapus()">C</button>
-        <button class="button" id="pos-neg" onclick="del()">D</button>
-        <button class="button" id="percen">+/-</button>
-        <button class="button operator" id="divine" onclick="adding('/')">/</button>
-        <button class="button" id="num_7" onclick="adding('7')">7</button>
-        <button class="button" id="num_8" onclick="adding('8')">8</button>
-        <button class="button" id="num_9" onclick="adding('9')">9</button>
-        <button class="button operator" id="plus" onclick="adding('+')">+</button>
-        <button class="button" id="num_4" onclick="adding('4')">4</button>
-        <button class="button" id="num_5" onclick="adding('5')">5</button>
-        <button class="button" id="num_6" onclick="adding('6')">6</button>
-        <button class="button operator" id="minus" onclick="adding('-')">-</button>
-        <button class="button" id="num_1" onclick="adding('1')">1</button>
-        <button class="button" id="num_2" onclick="adding('2')">2</button>
-        <button class="button" id="num_3" onclick="adding('3')">3</button>
-        <button class="button operator" id="multi" onclick="adding('*')">*</button>
-        <button class="button" id="point" onclick="adding('.')">.</button>
-        <button class="button" id="num_0" onclick="adding('0')">0</button>
-        <button class="button" id="sama-dengan" onclick="equals()">=</button>
-    </div>
-
-    <div class="fot">&copy;2019 Defri Indra</div>
-    <script type="text/javascript" src="file.js"></script>
-    <script type="text/javascript">
-        $(document).keydown(function(e){
-        if(e.which === 123){
-     
-           return false;
-     
-        }
-     
-    });
-    </script>
-</body>
-
+        <div id="window">
+            <div id="output">
+                <div class="hasil" id="display">0</div>
+                <div class="hasil" id="ret"></div>
+            </div>
+            <button class="button" id="clear" onclick="hapus()">C</button>
+            <button class="button" id="pos-neg" onclick="del()">D</button>
+            <button class="button" id="info">info</button>
+            <button class="button operator" id="divine" onclick="adding('/')">/</button>
+            <button class="button" onclick="adding('7')">7</button>
+            <button class="button" onclick="adding('8')">8</button>
+            <button class="button" onclick="adding('9')">9</button>
+            <button class="button operator" id="plus" onclick="adding('+')">+</button>
+            <button class="button" onclick="adding('4')">4</button>
+            <button class="button" onclick="adding('5')">5</button>
+            <button class="button" onclick="adding('6')">6</button>
+            <button class="button operator" id="minus" onclick="adding('-')">-</button>
+            <button class="button" onclick="adding('1')">1</button>
+            <button class="button" onclick="adding('2')">2</button>
+            <button class="button" onclick="adding('3')">3</button>
+            <button class="button operator" id="multi" onclick="adding('*')">*</button>
+            <button class="button" onclick="adding('.')">.</button>
+            <button class="button" onclick="adding('0')">0</button>
+            <button class="button" id="sama-dengan" onclick="equals()">=</button>
+        </div>
+        <div class="fot">&copy; Defri Indra</div>
+        <!-- Javascript File -->
+        <script type="text/javascript" src="file.js"></script>
+    </body>
 </html>
