@@ -137,6 +137,7 @@ body {
 	background: #C6EBC8;
 	padding: 3px;
 	margin: 0;
+	outline: none;
 }
 
 .operator {
