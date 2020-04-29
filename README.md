@@ -1,6 +1,6 @@
 # calculatorWeb
 
-simple calculator application ,made using
+Aplikasi Kalkulator sederhana yang dibuat menggunakan : 
 
 * html
 * css
